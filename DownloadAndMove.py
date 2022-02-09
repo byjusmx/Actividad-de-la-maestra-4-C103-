@@ -19,7 +19,7 @@ dir_tree = {
     "Setup_Files": ['.exe', '.bin', '.cmd', '.msi', '.dmg']
 }
 
-# Clase controladora de eventos
+# Clase event handler
 
 class FileMovementHandler(FileSystemEventHandler):
 
@@ -56,7 +56,7 @@ class FileMovementHandler(FileSystemEventHandler):
                     shutil.move(path1, path3)
                     time.sleep(1)
 
-# Inicia la clase controladora de eventos
+# Inicia la clase event handler
 event_handler = FileMovementHandler()
 
 # Inicializa Observer
